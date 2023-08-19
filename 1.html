@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p v-text="html"></p>
+        <p v-html="html"></p>
+    </div>
+    <script type="text/javascript">
+    var vm=new Vue({
+        el:"#app",
+        data:{
+            msg:"今天天气晴",
+            html:"<input type='date'>" 
+                     }
+                   })
+    </script>
+</body>
+</html>

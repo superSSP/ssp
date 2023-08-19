@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p v-once>原始值:{{msg}}</p>
+        <p>后面的:{{msg}}</p>
+        <input type="text" name=" "id="" value="" v-model="msg"/>
+    </div>
+    <script type="text/javascript">
+    var vm=new Vue({
+        el:"#app",
+        data:{
+            msg:"石均益是什么啊!"
+        }
+    })</script>
+</body>
+</html>
